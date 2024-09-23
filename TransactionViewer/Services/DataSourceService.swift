@@ -3,7 +3,6 @@ import Foundation
 
 final class DataSourceService {
     private let decoder: PropertyListDecoder
-    private var transactions: DecodableTransactions?
     
     init(
         decoder: PropertyListDecoder = .init()
@@ -13,7 +12,7 @@ final class DataSourceService {
     
     private func decode<T: Decodable>(for resource: String, with extension: String) -> T? {
         guard let url = Bundle.main.url(forResource: resource, withExtension: `extension`) else {
-            NSLog("DataSourceService: Resource not found")
+            NSLog("\(String(describing: self)): Resource not found")
             return nil
         }
         
@@ -22,7 +21,7 @@ final class DataSourceService {
             let decodableItem = try decoder.decode(T.self, from: data)
             return decodableItem
         } catch {
-            NSLog("DataSourceService: " + error.localizedDescription)
+            NSLog("\(String(describing: self)): " + error.localizedDescription)
             return nil
         }
     }

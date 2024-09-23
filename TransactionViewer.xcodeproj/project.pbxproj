@@ -90,9 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				0A3596242CA1864900CF3348 /* DecodableTransactionModel.swift */,
-				0A35962A2CA1910D00CF3348 /* TransactionModel.swift */,
-				0A35962C2CA1970F00CF3348 /* TransactionGroup.swift */,
 				0A3596352CA19B1A00CF3348 /* RateModel.swift */,
+				0A35962C2CA1970F00CF3348 /* TransactionGroup.swift */,
+				0A35962A2CA1910D00CF3348 /* TransactionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -132,14 +132,6 @@
 				0A35963B2CA1AA5E00CF3348 /* ServicesProtocols */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		0A8186C92B4E75430089401C /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				0A8186CA2B4E754C0089401C /* Constant.swift */,
-			);
-			path = Enums;
 			sourceTree = "<group>";
 		};
 		EB63AE712AE810A300454218 = {
@@ -201,8 +193,8 @@
 		EB63AE8E2AE8110100454218 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				0A8186CA2B4E754C0089401C /* Constant.swift */,
 				0A3596412CA1B6C000CF3348 /* Functions.swift */,
-				0A8186C92B4E75430089401C /* Enums */,
 				0A35963C2CA1AD2000CF3348 /* Extensions */,
 				0A3596222CA1863100CF3348 /* Models */,
 			);

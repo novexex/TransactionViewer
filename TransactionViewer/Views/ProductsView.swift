@@ -41,7 +41,3 @@ struct ProductsView: View {
         }
     }
 }
-
-#Preview {
-    ProductsView()
-}

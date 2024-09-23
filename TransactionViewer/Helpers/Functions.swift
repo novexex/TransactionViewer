@@ -14,7 +14,9 @@ func convertToDictionary(with items: Rates) -> RatesDictionary {
     return ratesDictionary
 }
 
-func findRate(from: String, to: String, ratesDictionary: RatesDictionary) -> Double {
+func findRate(from: String,
+              to: String,
+              ratesDictionary: RatesDictionary) -> Double {
     if let directRate = ratesDictionary["\(from)_\(to)"] {
         return directRate
     }
@@ -38,7 +40,10 @@ func findRate(from: String, to: String, ratesDictionary: RatesDictionary) -> Dou
     return 0
 }
 
-func convertCurrency(amount: Double?, from: String, to: String = "GBP", ratesDictionary: RatesDictionary) -> Double {
+func convertCurrency(amount: Double?,
+                     from: String,
+                     to: String = "GBP",
+                     ratesDictionary: RatesDictionary) -> Double {
     guard let amount else { return 0 }
     guard from != to else { return amount }
     
